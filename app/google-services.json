@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "412142726413",
+    "project_id": "proje-yonetim-sistemi-af099",
+    "storage_bucket": "proje-yonetim-sistemi-af099.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:412142726413:android:429eb7917770931235d444",
+        "android_client_info": {
+          "package_name": "com.umitakay.projectstudentmanagerr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWxln7D86Ct74wZjMZ7xHrJfLQZVhkQmU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="12dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView android:id="@+id/tvProjectName" android:textStyle="bold"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <TextView android:id="@+id/tvInfo"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Süre | Teknolojiler"/>
+    <TextView android:id="@+id/tvStatus"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Durum: pending"/>
+
+    <Button
+        android:id="@+id/btnWithdraw"
+        android:text="Başvuruyu İptal Et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="12dp"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <TextView android:id="@+id/tvName" android:textStyle="bold"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+    <TextView android:id="@+id/tvInfo"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="numara | email | durum"/>
+
+    <TextView android:id="@+id/tvTechs"
+        android:layout_width="wrap_content" android:layout_height="wrap_content"
+        android:text="Teknolojiler"/>
+
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_marginTop="8dp"
+        android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btnAccept"
+            android:text="Kabul Et"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <Space android:layout_width="12dp" android:layout_height="0dp"/>
+
+        <Button
+            android:id="@+id/btnReject"
+            android:text="Reddet"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>

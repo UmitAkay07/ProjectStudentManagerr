@@ -1,0 +1,38 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical" android:padding="16dp"
+        android:layout_width="match_parent" android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:text="Profilim"
+            android:textStyle="bold" android:textSize="18sp"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+
+        <TextView android:text="Ad Soyad" android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:id="@+id/tvName"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <TextView android:text="Öğrenci No" android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        <TextView android:id="@+id/tvNo"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <TextView android:text="E-posta" android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        <TextView android:id="@+id/tvEmail"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <TextView android:text="Durum" android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        <TextView android:id="@+id/tvStatus"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+
+        <TextView android:text="Teknolojiler" android:textStyle="bold"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp"/>
+        <TextView android:id="@+id/tvTechs"
+            android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>

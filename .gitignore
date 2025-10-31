@@ -1,0 +1,38 @@
+
+# Android/Gradle
+.gradle/
+**/build/
+local.properties
+*.iml
+/.idea/
+.cxx/
+.externalNativeBuild/
+captures/
+
+# Keystore & secrets
+*.jks
+*.keystore
+*.keystore.properties
+
+# Logs
+*.log
+
+# OS çöp dosyaları
+.DS_Store
+Thumbs.db
+
+# JetBrains/IDE gürültüsü
+.idea/**/workspace.xml
+.idea/**/tasks.xml
+.idea/shelf/
+.idea/**/dictionaries
+.idea/**/httpRequests
+.idea/**/libraries
+.idea/**/caches
+.idea/**/gradle.xml
+
+# Node (varsa)
+node_modules/
+
+# Python sanal ortam (varsa)
+.venv/

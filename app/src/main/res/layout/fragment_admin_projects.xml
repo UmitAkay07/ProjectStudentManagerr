@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btnAddProject"
+        android:text="Yeni Proje Ekle"
+        android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProjects"
+        android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1" android:paddingTop="8dp"/>
+</LinearLayout>

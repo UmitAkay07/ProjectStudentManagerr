@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="com.umitakay.projectstudentmanagerr.ui.welcome.WelcomeFragment"
+        android:label="Hoş Geldin" >
+        <action
+            android:id="@+id/action_welcome_to_login"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_welcome_to_register"
+            app:destination="@id/registerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.umitakay.projectstudentmanagerr.ui.auth.LoginFragment"
+        android:label="Giriş Yap" >
+        <action
+            android:id="@+id/action_login_to_home"
+            app:destination="@id/studentHomeFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.umitakay.projectstudentmanagerr.ui.auth.RegisterFragment"
+        android:label="Kayıt Ol" >
+        <action
+            android:id="@+id/action_register_to_login"
+            app:destination="@id/loginFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/studentHomeFragment"
+        android:name="com.umitakay.projectstudentmanagerr.ui.home.StudentHomeFragment"
+        android:label="Öğrenci Anasayfa" />
+
+    <fragment
+        android:id="@+id/adminHomeFragment"
+        android:name="com.umitakay.projectstudentmanagerr.ui.admin.AdminHomeFragment"
+        android:label="Admin Paneli">
+        <action
+            android:id="@+id/action_adminHome_to_adminStudents"
+            app:destination="@id/adminStudentsFragment" />
+    </fragment>
+
+    <action
+        android:id="@+id/action_login_to_adminHome"
+        app:destination="@id/adminHomeFragment" />
+
+    <fragment
+        android:id="@+id/adminStudentsFragment"
+        android:name="com.umitakay.projectstudentmanagerr.ui.admin.AdminStudentsFragment"
+        android:label="Öğrenci Yönetimi" />
+
+    <!-- Admin tarafı -->
+    <fragment
+        android:id="@+id/adminProjectsFragment"
+        android:name="com.umitakay.projectstudentmanagerr.ui.admin.AdminProjectsFragment"
+        android:label="Projeler" />
+    <fragment
+        android:id="@+id/adminProjectAddFragment"
+        android:name="com.umitakay.projectstudentmanagerr.ui.admin.AdminProjectAddFragment"
+        android:label="Proje Ekle" />
+    <action
+        android:id="@+id/action_adminProjects_to_adminProjectAdd"
+        app:destination="@id/adminProjectAddFragment" />
+
+
+    <fragment
+        android:id="@+id/studentProjectsFragment"
+        android:name="com.umitakay.projectstudentmanagerr.ui.home.StudentProjectsFragment"
+        android:label="Projeler" />
+
+
+    <fragment
+        android:id="@+id/adminApplicantsFragment"
+        android:name="com.umitakay.projectstudentmanagerr.ui.admin.AdminApplicantsFragment"
+        android:label="Başvuranlar">
+        <argument
+            android:name="projectId"
+            app:argType="string" />
+        <argument
+            android:name="projectName"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/studentMyApplicationsFragment"
+        android:name="com.umitakay.projectstudentmanagerr.ui.home.StudentMyApplicationsFragment"
+        android:label="Başvurularım" />
+    <fragment
+        android:id="@+id/adminProjectEditFragment"
+        android:name="com.umitakay.projectstudentmanagerr.ui.admin.AdminProjectEditFragment"
+        android:label="Proje Düzenle">
+        <argument
+            android:name="projectId"
+            app:argType="string" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/studentProfileFragment"
+        android:name="com.umitakay.projectstudentmanagerr.ui.home.StudentProfileFragment"
+        android:label="Profilim" />
+
+
+
+
+
+
+</navigation>
