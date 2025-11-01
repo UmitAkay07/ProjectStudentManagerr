@@ -29,17 +29,6 @@ class MyApplicationsAdapter(
         return VH(b)
     }
 
-   /* override fun onBindViewHolder(h: VH, pos: Int) {
-        val row = items[pos]
-        val prj = row.project
-        with(h.b) {
-            tvProjectName.text = prj.name
-            val techs = if (prj.technologies.isEmpty()) "—" else prj.technologies.joinToString(", ")
-            tvInfo.text = "${prj.durationDays} gün | $techs"
-            tvStatus.text = "Durum: ${row.status}"
-        }
-    }*/
-
     override fun onBindViewHolder(h: VH, pos: Int) {
         val row = items[pos]
         val prj = row.project

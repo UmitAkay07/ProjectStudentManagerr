@@ -1,35 +1,3 @@
-/*package com.umitakay.projectstudentmanagerr.ui.admin
-
-import android.view.LayoutInflater
-import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
-import com.umitakay.projectstudentmanagerr.data.model.Student
-import com.umitakay.projectstudentmanagerr.databinding.ItemApplicantBinding
-
-class ApplicantsAdapter : RecyclerView.Adapter<ApplicantsAdapter.VH>() {
-    private val items = mutableListOf<Student>()
-    fun submit(list: List<Student>) { items.clear(); items.addAll(list); notifyDataSetChanged() }
-
-    inner class VH(val b: ItemApplicantBinding) : RecyclerView.ViewHolder(b.root)
-
-    override fun onCreateViewHolder(p: ViewGroup, v: Int): VH {
-        val b = ItemApplicantBinding.inflate(LayoutInflater.from(p.context), p, false)
-        return VH(b)
-    }
-    override fun getItemCount() = items.size
-    override fun onBindViewHolder(h: VH, pos: Int) {
-        val s = items[pos]
-        with(h.b) {
-            tvName.text = s.fullName
-            tvInfo.text = "${s.studentNo} | ${s.email} | ${s.status}"
-            tvTechs.text = if (s.technologies.isEmpty()) "—" else s.technologies.joinToString(", ")
-        }
-    }
-}
-*/
-
-
-// ui/admin/ApplicantsAdapter.kt
 package com.umitakay.projectstudentmanagerr.ui.admin
 
 import android.view.LayoutInflater
@@ -68,7 +36,7 @@ class ApplicantsAdapter(
             tvInfo.text = "${s.studentNo} | ${s.email} | durum: ${row.status}"
             tvTechs.text = if (s.technologies.isEmpty()) "—" else s.technologies.joinToString(", ")
 
-            // pending değilse butonları pasifleştir (opsiyonel)
+            // pending değilse butonları pasifleştir
             val enabled = row.status == "pending"
             btnAccept.isEnabled = enabled
             btnReject.isEnabled = enabled
